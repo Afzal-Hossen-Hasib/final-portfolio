@@ -1,0 +1,65 @@
+.project {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.project .box {
+    border-radius: 10px;
+    position: relative;
+}
+
+.project .box:hover {
+    background: none;
+    transform: translateY(0);
+}
+
+.project .img {
+    height: 300px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.project .box .img:hover img {
+    transform: scale(1.2);
+}
+
+.heading {
+    margin: 50px 0 50px 0;
+}
+
+.heading h4 {
+    color: #ff014f;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 35px;
+}
+
+.project .category span {
+    color: #ff014f;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+}
