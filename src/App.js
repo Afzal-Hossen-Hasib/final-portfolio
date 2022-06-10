@@ -7,6 +7,8 @@ import Header from './components/Home/Header/Header';
 import AllProject from './components/AllProject/AllProject';
 import Footer from './components/Shared/Footer/Footer';
 import Resume from './components/Resume/Resume';
+import DetailProject from './components/DetailProject/DetailProject';
+import Blog from './components/Blog/Blog';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/project' element={<AllProject></AllProject>}></Route>
+        <Route path='/blog' element={<Blog></Blog>}></Route>
+        <Route path='/detailProject/:id' element={<DetailProject></DetailProject>}></Route> 
         <Route path='/resume' element={<Resume></Resume>}></Route>
       </Routes>
       <Footer></Footer>

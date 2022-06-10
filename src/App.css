@@ -52,6 +52,7 @@ button {
     transition: 0.5s all ease;
     cursor: pointer;
     color: #000;
+    font-weight: bold;
 }
 
 .btn_shadow {
@@ -81,7 +82,7 @@ footer {
     margin: 20% 0 0 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .grid {
         grid-template-columns: repeat(1, 1fr);
     }

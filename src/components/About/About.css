@@ -11,7 +11,7 @@
     margin-top: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     
     .hero .about_img {
       width: 95%;

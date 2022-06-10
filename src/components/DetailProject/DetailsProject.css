@@ -1,0 +1,22 @@
+.detail-project {
+    margin-top: 100px;
+}
+
+.all-container {
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .all-container img {
+        width: 100%;
+    }
+    
+    .all-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .all-button {
+        width: 100%;
+    }
+}

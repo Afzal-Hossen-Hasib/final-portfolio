@@ -12,6 +12,7 @@
 .project .box:hover {
     background: none;
     transform: translateY(0);
+    color: black;
 }
 
 .project .img {
@@ -49,6 +50,7 @@
     cursor: pointer;
     color: #ff014f;
     margin-left: 50%;
+    font-weight: bold;
 }
 
 .see-btn {
@@ -73,7 +75,7 @@
     font-weight: bold;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .grid {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -89,5 +91,9 @@
         cursor: pointer;
         color: #ff014f;
         margin-left: 35%;
+    }
+
+    .home-btn {
+        margin-top: 20px;
     }
 }

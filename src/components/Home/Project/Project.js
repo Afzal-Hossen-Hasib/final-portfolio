@@ -1,11 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import useProject from "../../../hooks/useProject";
 import "./Project.css";
 
 const Project = () => {
   const [projects, setProjects] = useProject();
   const project = projects.slice(0, 4);
+
+  const navigate = useNavigate();
+        const handleDetail = id => {
+            navigate (`/detailProject/${id}`)
+        }
 
   return (
     <div>
@@ -18,7 +23,7 @@ const Project = () => {
 
         <div className="content grid">
           {project.map((newP) => {
-            const { name, img } = newP;
+            const { name, img, detail, tech, live, client, server, id } = newP;
             return (
               <div className="box btn_shadow">
                 <div className="img">
@@ -27,8 +32,11 @@ const Project = () => {
 
                 <div className="category d_flex">
                   <span>{name}</span>
-                </div>
-                <button className="home-btn">See Details</button>
+                </div> <br />
+
+                
+
+                <button onClick={()=> handleDetail(id)} className="btn btn-sm home-btn">See Details</button>
               </div>
             );
           })}
@@ -37,7 +45,7 @@ const Project = () => {
         
       </section>
       <Link className="see-btn mt-10" to="/project">
-          See More..
+          See More Projects..
         </Link>
     </div>
   );

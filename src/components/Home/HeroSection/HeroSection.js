@@ -1,6 +1,5 @@
 import React from "react";
 import hero from "../../../Images/pic/new1.png";
-import { Typewriter, useTypewriter, Cursor } from "react-simple-typewriter";
 import "./HeroSection.css";
 
 const HeroSection = () => {
@@ -20,6 +19,7 @@ const HeroSection = () => {
             <h2>
               A <span>Junior Web Developer !!</span>
             </h2>
+
             <p>
               I'm a Bangladesh based Junior Web Developer focused on crafting
               clean and user‑friendly experiences, I am passionate about

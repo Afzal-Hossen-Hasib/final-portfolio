@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../../../Images/pic/logo.png'
+import logo from '../../../Images/pic/HASIB.png'
 import './Header.css'
 import { Link } from 'react-router-dom';
 
@@ -19,18 +19,18 @@ const Header = () => {
             <header className='header'>
         <div className='container d_flex'>
           <div className='logo'>
-            <img src={logo} alt='' />
+            <Link to='/'><img src={logo} alt='' /></Link>
           </div>
 
           <div className='navlink'>
             <ul className={Mobile ? "nav-links-mobile" : "link f_flex uppercase"} onClick={() => setMobile(false)}>
               {/*<ul className='link f_flex uppercase {Mobile ? "nav-links-mobile" : "nav-links"} onClick={() => setMobile(false)}'>*/}
-              <li><Link to='/'>Home</Link></li>
-                <li><Link to='/about'>About</Link></li>
-                  <li><Link to='/project'>Projects</Link></li>
-                  <li><Link to='/resume'>Resume</Link></li>
-                  <li><Link to='/'>Blog</Link></li>
-                  <li><a href="#contact">Contact</a></li>
+              <li><Link className='btn_shadow' to='/'>Home</Link></li>
+                <li><Link className='btn_shadow' to='/about'>About</Link></li>
+                  <li><Link className='btn_shadow' to='/project'>Projects</Link></li>
+                  <li><Link className='btn_shadow' to='/resume'>Resume</Link></li>
+                  <li><Link className='btn_shadow' to='/blog'>Blog</Link></li>
+                  <li><a className='btn_shadow' href="#contact">Contact</a></li>
             </ul>
 
             <button className='t-btn' onClick={() => setMobile(!Mobile)}>

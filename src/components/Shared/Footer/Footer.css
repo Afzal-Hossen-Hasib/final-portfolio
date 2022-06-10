@@ -2,7 +2,31 @@
     margin-top: 80px;
 }
 
+footer span {
+    color: #ff014f;
+}
+
+footer img {
+    width: 20%;
+    border-radius: 50%;
+}
+
 .foote-cont p {
     font-size: 20px;
     font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .title p {
+        font-size: 15px;
+    }
+
+    footer img {
+        width: 50%;
+        border-radius: 50%;
+    }
+
+    .title-anc a {
+        display: none;
+    }
 }
