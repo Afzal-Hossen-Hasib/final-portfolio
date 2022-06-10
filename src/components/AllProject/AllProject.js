@@ -1,9 +1,40 @@
 import React from 'react';
+import useProject from '../../hooks/useProject';
 
 const AllProject = () => {
+
+    const  [projects, setProjects] = useProject ();
+
     return (
         <div>
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente architecto ipsam obcaecati voluptatem quis asperiores quod aperiam, blanditiis amet temporibus porro eos laborum maiores non, reprehenderit omnis laboriosam nam facilis dolor minima impedit. Fugiat aliquid tempore modi commodi. Dolore veritatis porro voluptas mollitia voluptate, tenetur quisquam necessitatibus maxime, ipsam dolorum accusamus quod corrupti ipsum blanditiis minus rem deleniti debitis. Tempore quia et exercitationem, pariatur quasi illum minima, eveniet, eos rerum beatae architecto consectetur est sequi! Soluta amet veritatis eligendi quidem quasi, laboriosam libero quisquam illo debitis dolorum dolores necessitatibus nulla voluptates atque aliquid maxime iure voluptas iusto maiores fugit odit?</h1>
+        <section className='project top'>
+            <div className="container">
+                <div className="heading">
+                    <h4>MY PROJECTS</h4>
+                </div>
+            </div>
+
+            <div className="content grid">
+                {
+                    projects.map (newP => {
+                        const {name, img} = newP
+                        return (
+                            <div className='box btn_shadow'>
+                                <div className="img">
+                                    <img src={img} alt="" />
+                                </div>
+
+                                <div className="category d_flex">
+                                    <span>{name}</span>
+                                </div>
+                                <button className='home-btn'>See Details</button>
+                            </div> 
+
+                        )
+                    })
+                }
+            </div>
+        </section>
         </div>
     );
 };

@@ -1,3 +1,20 @@
 .about-hero {
     margin-top: 80px;
 }
+
+.hero .about_img {
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+    border-radius: 10px;
+    height: 500px;
+    width: 500px;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 480px) {
+    
+    .hero .about_img {
+      width: 95%;
+      height: 54vh;
+    }
+}

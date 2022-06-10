@@ -1,7 +1,7 @@
 .project {
     position: relative;
     width: 80%;
-    margin: 0 auto;
+    margin: 80px auto;
 }
 
 .project .box {
@@ -38,9 +38,28 @@
     color: #ff014f;
     letter-spacing: 2px;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
 }
+
+.see-btn {
+    padding: 18px 30px;
+    border-radius: 6px;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    color: #ff014f;
+    margin-left: 50%;
+}
+
+.see-btn {
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+}
+
+.see-btn:hover {
+    background: #ff014f;
+    color: white;
+  }
 
 .grid {
     display: grid;
@@ -50,7 +69,7 @@
 
 .project .category span {
     color: #ff014f;
-    font-size: 2rem;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
@@ -61,5 +80,14 @@
 
     .left, .right {
         width: 100%;
+    }
+
+    .see-btn {
+        padding: 18px 30px;
+        border-radius: 6px;
+        transition: 0.3s all ease;
+        cursor: pointer;
+        color: #ff014f;
+        margin-left: 35%;
     }
 }

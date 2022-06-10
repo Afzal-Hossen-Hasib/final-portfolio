@@ -6,6 +6,7 @@ import Home from './components/Home/Home/Home';
 import Header from './components/Home/Header/Header';
 import AllProject from './components/AllProject/AllProject';
 import Footer from './components/Shared/Footer/Footer';
+import Resume from './components/Resume/Resume';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/project' element={<AllProject></AllProject>}></Route>
+        <Route path='/resume' element={<Resume></Resume>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

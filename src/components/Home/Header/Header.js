@@ -28,9 +28,9 @@ const Header = () => {
               <li><Link to='/'>Home</Link></li>
                 <li><Link to='/about'>About</Link></li>
                   <li><Link to='/project'>Projects</Link></li>
-                  <li><Link to='/'>Resume</Link></li>
+                  <li><Link to='/resume'>Resume</Link></li>
                   <li><Link to='/'>Blog</Link></li>
-                  <li><Link to='/'>Contact</Link></li>
+                  <li><a href="#contact">Contact</a></li>
             </ul>
 
             <button className='t-btn' onClick={() => setMobile(!Mobile)}>
